@@ -1,9 +1,9 @@
-<center>
+<p align="center">
 <img src="https://s3.jagoanstorage.com/aditia-storage/asset/logo/analisaPenjualan.png" width="200">
-
+</p>
 ## Aplikasi Analisa Penjualan
 (Menggunakan metode aprirori)
-</center>
+
 <br/>
 <strong>Fitur</strong>
 <li>Manajemen produk</li>
