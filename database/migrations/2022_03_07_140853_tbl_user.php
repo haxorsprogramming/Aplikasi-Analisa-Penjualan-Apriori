@@ -16,7 +16,7 @@ class TblUser extends Migration
         Schema::create('tbl_user', function (Blueprint $table) {
             $table -> id();
             $table -> char('username', 50);
-            $table -> char('role', 1);
+            $table -> char('role', 10);
             $table -> char('password', 200);
             $table -> text('api_token') -> nullable();
             $table -> timestamps(); 
