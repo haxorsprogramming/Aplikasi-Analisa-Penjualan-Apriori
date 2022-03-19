@@ -8,6 +8,7 @@ class C_Dashboard extends Controller
 {
     public function dashboard()
     {
+        
         return view('main.dashboard');
     }
 }
