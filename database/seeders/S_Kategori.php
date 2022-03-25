@@ -15,7 +15,7 @@ class S_Kategori extends Seeder
      */
     public function run()
     {
-        $kategori = array("SAYURAN", "MINYAK", "TELUR", "TEPUNG", "SIRUP", "MAKANANRINGAN", "BUMBU", "DAGING", "DETERJEN");
+        $kategori = array("SAYURAN", "MINYAK", "TELUR", "TEPUNG", "SIRUP", "MAKANANRINGAN", "BUMBU", "DAGING", "DETERJEN", "PEWANGI", "SABUN", "OBAT");
         for($x = 0; $x < count($kategori); $x++){
             $this -> createKategori($kategori[$x]);
         }

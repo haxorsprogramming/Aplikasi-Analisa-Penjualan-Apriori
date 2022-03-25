@@ -18,3 +18,12 @@ function renderPage(page)
 }
 
 renderPage('dashboard/beranda');
+
+function pesanUmumApp(icon, title, text)
+{
+  Swal.fire({
+    icon : icon,
+    title : title,
+    text : text
+  });
+}

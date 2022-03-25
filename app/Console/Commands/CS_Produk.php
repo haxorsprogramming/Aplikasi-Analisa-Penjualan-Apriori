@@ -20,7 +20,7 @@ class CS_Produk extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Perintah untuk melakukan import produk';
 
     /**
      * Create a new command instance.
