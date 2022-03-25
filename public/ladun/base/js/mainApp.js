@@ -1,3 +1,5 @@
+// route 
+
 // insialisasi 
 var mainApp = new Vue({
     el : '#mainApp',
@@ -5,6 +7,14 @@ var mainApp = new Vue({
 
     },
     methods : {
-        
+
     }
 });
+
+function renderPage(page)
+{
+    $("#divUtama").html("Memuat ...");
+    $("#divUtama").load(server + page);
+}
+
+renderPage('dashboard/beranda');

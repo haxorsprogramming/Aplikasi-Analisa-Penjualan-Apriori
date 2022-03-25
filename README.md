@@ -12,3 +12,7 @@
 <li>Analisa penjualan</li>
 <li>Laporan analisa penjualan</li>
 <li>Progress notifikasi proses analisa apriori realtime</li>
+
+**Aplikasi ini sedang dalam pengembangan
+
+**Jika terdapat kendala dalam penggunaan/pengembangan aplikasi ini dapat menghubungi (alditha.forum@gmail.com)

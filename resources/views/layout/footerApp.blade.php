@@ -38,6 +38,9 @@
 <script src="{{ asset('ladun/apaxy/') }}/libs/jqvmap/jquery.vmap.min.js"></script>
 <script src="{{ asset('ladun/apaxy/') }}/libs/jqvmap/maps/jquery.vmap.usa.js"></script>
 
+<!-- Required datatable js -->
+<script src="{{ asset('ladun/apaxy/') }}/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{ asset('ladun/apaxy/') }}/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 
 <script src="{{ asset('ladun/apaxy/') }}/js/app.js"></script>
 <script>

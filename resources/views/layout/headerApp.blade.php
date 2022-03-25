@@ -19,6 +19,14 @@
 
     <!-- Bootstrap Css -->
     <link href="{{ asset('ladun/apaxy/') }}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="{{ asset('ladun/apaxy/') }}/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('ladun/apaxy/') }}/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="{{ asset('ladun/apaxy/') }}/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Icons Css -->
     <link href="{{ asset('ladun/apaxy/') }}/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -109,36 +117,36 @@
         </header>
 
         <div class="topnav">
-    <div class="container-fluid">
-        <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
-            <div class="collapse navbar-collapse" id="topnav-menu-content">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">
-                            <i class="mdi mdi-storefront mr-2"></i>Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="mdi mdi-flip-horizontal mr-2"></i>Data Master <div class="arrow-down"></div>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                            <a href="javascript:void(0)" class="dropdown-item">Data Produk</a>
-                            <a href="javascript:void(0)" class="dropdown-item">Data Penjualan</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">
-                            <i class="mdi mdi-storefront mr-2"></i>Proses Apriori
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">
-                            <i class="mdi mdi-storefront mr-2"></i>Laporan
-                        </a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+                    <div class="collapse navbar-collapse" id="topnav-menu-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('dashboard/beranda')">
+                                    <i class="mdi mdi-storefront mr-2"></i>Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="mdi mdi-flip-horizontal mr-2"></i>Data Master <div class="arrow-down"></div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                    <a href="javascript:void(0)" onclick="renderPage('app/produk/data')" class="dropdown-item">Data Produk</a>
+                                    <a href="javascript:void(0)" class="dropdown-item">Data Penjualan</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <i class="mdi mdi-storefront mr-2"></i>Proses Apriori
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <i class="mdi mdi-storefront mr-2"></i>Laporan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
-</div>
+        </div>

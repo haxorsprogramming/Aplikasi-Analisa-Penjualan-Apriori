@@ -15,15 +15,10 @@ class S_Kategori extends Seeder
      */
     public function run()
     {
-        $this -> createKategori("SAYURAN");
-        $this -> createKategori("MINYAK");
-        $this -> createKategori("TELUR"); 
-        $this -> createKategori("TEPUNG");
-        $this -> createKategori("SIRUP");
-        $this -> createKategori("MAKANANRINGAN");
-        $this -> createKategori("BUMBU");
-        $this -> createKategori("DAGING");
-        $this -> createKategori("DETERJEN");
+        $kategori = array("SAYURAN", "MINYAK", "TELUR", "TEPUNG", "SIRUP", "MAKANANRINGAN", "BUMBU", "DAGING", "DETERJEN");
+        for($x = 0; $x < count($kategori); $x++){
+            $this -> createKategori($kategori[$x]);
+        }
     }
 
     function createKategori($namaKategori)
