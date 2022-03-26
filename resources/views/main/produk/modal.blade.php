@@ -66,7 +66,7 @@
                     </select>
                 </div>
                 <div>
-                    <a href="javascript:void(0)" class="btn btn-primary">Update Data Produk</a>
+                    <a href="javascript:void(0)" @click="prosesUpdateProdukAtc()" class="btn btn-primary">Update Data Produk</a>
                 </div>
             </div>
             <div class="modal-footer bg-whitesmoke br">

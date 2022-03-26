@@ -35,6 +35,10 @@
                             <a class="btn btn-primary btn-sm waves-effect waves-light" href="javascript:void(0)" @click="editAtc('{{ $produk -> kd_produk }}')">
                                 <i class="mdi mdi-folder-edit-outline"></i>
                                 Edit
+                            </a>&nbsp;
+                            <a class="btn btn-warning btn-sm waves-effect waves-light" href="javascript:void(0)" @click="deleteAtc('{{ $produk -> kd_produk }}')">
+                                <i class="mdi mdi-folder-edit-outline"></i>
+                                Hapus
                             </a>
                             </td>
                         </tr>

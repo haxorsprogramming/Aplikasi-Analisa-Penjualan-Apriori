@@ -145,6 +145,11 @@
                                     <i class="mdi mdi-storefront mr-2"></i>Laporan
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <i class="mdi mdi-storefront mr-2"></i>Info Aplikasi
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

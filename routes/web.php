@@ -14,3 +14,5 @@ Route::get('/dashboard/beranda', [C_Dashboard::class, 'berandaPage']);
 Route::get('/app/produk/data', [C_Produk::class, 'dataProdukPage']);
 Route::post('/app/produk/tambah/proses', [C_Produk::class, 'prosesTambahProduk']);
 Route::post('/app/produk/data/res', [C_Produk::class, 'getDataProdukRes']);
+Route::post('/app/produk/update/proses', [C_Produk::class, 'prosesUpdateProduk']);
+Route::post('/app/produk/hapus/proses', [C_Produk::class, 'prosesHapusProduk']);

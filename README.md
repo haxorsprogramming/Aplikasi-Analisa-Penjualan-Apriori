@@ -3,7 +3,7 @@
 </p>
 
 ## Aplikasi Analisa Penjualan
-(Menggunakan metode aprirori)
+(Menggunakan metode apriori)
 
 <br/>
 <strong>Fitur</strong>
@@ -12,6 +12,7 @@
 <li>Analisa penjualan</li>
 <li>Laporan analisa penjualan</li>
 <li>Progress notifikasi proses analisa apriori realtime</li>
+
 
 <strong>Aplikasi ini sedang dalam pengembangan</strong>
 

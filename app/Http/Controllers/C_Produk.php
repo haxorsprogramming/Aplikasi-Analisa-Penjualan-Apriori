@@ -35,4 +35,21 @@ class C_Produk extends Controller
         // $dr = ['status' => 'sukses'];
         return \Response::json($dataProduk);
     }
+    public function prosesUpdateProduk(Request $request)
+    {
+        // {'kdProduk':kdProduk, 'nama':nama, 'harga':harga, 'kategori':kategori}
+        M_Produk::where('kd_produk', $request -> kdProduk) -> update([
+            'nama_produk' => $request -> nama,
+            'harga' => $request -> harga,
+            'kd_kategori' => $request -> kategori
+        ]);
+        $dr = ['status' => 'sukses'];
+        return \Response::json($dr);
+    }
+    public function prosesHapusProduk(Request $request)
+    {
+        M_Produk::where('kd_produk', $request -> idProduk) -> delete();
+        $dr = ['status' => 'sukses'];
+        return \Response::json($dr);
+    }
 }
