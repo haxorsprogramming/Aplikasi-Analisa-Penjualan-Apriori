@@ -4,20 +4,21 @@
 var mainApp = new Vue({
     el : '#mainApp',
     data : {
-
+        judulPage : 'Dashboard'
     },
     methods : {
 
     }
 });
 
-function renderPage(page)
+function renderPage(page, judulPage)
 {
     $("#divUtama").html("Memuat ...");
     $("#divUtama").load(server + page);
+    mainApp.judulPage = judulPage;
 }
 
-renderPage('dashboard/beranda');
+renderPage('dashboard/beranda', 'Dashboard');
 
 function pesanUmumApp(icon, title, text)
 {

@@ -122,7 +122,7 @@
                     <div class="collapse navbar-collapse" id="topnav-menu-content">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('dashboard/beranda')">
+                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('dashboard/beranda', 'Dashboard')">
                                     <i class="mdi mdi-storefront mr-2"></i>Dashboard
                                 </a>
                             </li>
@@ -131,8 +131,8 @@
                                     <i class="mdi mdi-flip-horizontal mr-2"></i>Data Master <div class="arrow-down"></div>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                    <a href="javascript:void(0)" onclick="renderPage('app/produk/data')" class="dropdown-item">Data Produk</a>
-                                    <a href="javascript:void(0)" class="dropdown-item">Data Penjualan</a>
+                                    <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Data Produk</a>
+                                    <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Data Penjualan</a>
                                 </div>
                             </li>
                             <li class="nav-item">

@@ -3,6 +3,8 @@ var rProsesTambahProduk = server + "app/produk/tambah/proses";
 var rGetDataProduk = server + "app/produk/data/res";
 var rProsesUpdateProduk = server + "app/produk/update/proses";
 var rProsesHapusProduk = server + "app/produk/hapus/proses";
+var rProsesImportProduk = server +  "app/produk/import/proses";
+
 // vue object 
 var appProduk = new Vue({
     el : '#divDataProduk',
@@ -43,11 +45,31 @@ var appProduk = new Vue({
         deleteAtc : function(idProduk)
         {
             confirmQuest('info', 'Konfirmasi', 'Hapus produk ...?', function (x) {deleteConfirm(idProduk)});
+        },
+        importProdukAtc : function()
+        {
+            $("#modalImportProduk").modal("show");
+        },
+        prosesImportProdukAtc : function()
+        {
+            confirmQuest('info', 'Konfirmasi', 'Import produk... ?', function (x) {konfirmasiImport()});
         }
     }
 });
 // inisialisasi 
 $("#tblDataProduk").dataTable();
+
+function konfirmasiImport()
+{
+    axios.post(rProsesImportProduk).then(function(res){
+        let pesan = "Produk berhasil di import, total "+res.data.totalProduk+" produk berhasil di import ..";
+        $("#modalImportProduk").modal("hide");
+        setTimeout(function(){
+            pesanUmumApp('success', 'Sukses', pesan);
+            renderPage('app/produk/data');
+        }, 400);
+    });
+}
 
 function deleteConfirm(idProduk)
 {

@@ -41,6 +41,5 @@ class CS_Produk extends Command
     {
         M_Produk::truncate();  
         Excel::import(new ProdukImport, public_path('/file_import/DATA_PRODUK.xlsx'));
-        echo "Produk berhasil di import ...";
     }
 }

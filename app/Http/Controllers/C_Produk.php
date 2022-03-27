@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Artisan;
+
 use App\Models\M_Produk;
 use App\Models\M_Kategori;
 
@@ -50,6 +52,14 @@ class C_Produk extends Controller
     {
         M_Produk::where('kd_produk', $request -> idProduk) -> delete();
         $dr = ['status' => 'sukses'];
+        return \Response::json($dr);
+    }
+
+    public function prosesImportProduk(Request $request)
+    {
+        Artisan::call('importDataProduk');
+        $totalProduk = M_Produk::count();
+        $dr = ['status' => 'sukses', 'totalProduk' => $totalProduk];
         return \Response::json($dr);
     }
 }
