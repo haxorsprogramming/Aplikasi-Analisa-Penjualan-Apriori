@@ -47,18 +47,19 @@ class CS_Create_Fake_Penjualan extends Command
         $totalProduk = M_Produk::count();
         for($x = 0; $x < $bahanArgunmen[1]; $x++){
             $kdFaktur = Str::uuid();
-            $jarak = rand(0, $totalProduk - 5);
+            $jarak = rand(0, 10);
             $dataProdukTemp = array();
             $dataProduk = M_Produk::all();
             foreach($dataProduk as $produk){
                 array_push($dataProdukTemp, $produk -> kd_produk);
             }
+            shuffle($dataProdukTemp);
             for($k = 0; $k <= $jarak; $k++){
                 $penjualan = new M_Penjualan();
                 $penjualan -> kd_penjualan = Str::uuid();
                 $penjualan -> no_faktur = $kdFaktur;
                 $penjualan -> kd_barang = $dataProdukTemp[$k];
-                $penjualan -> qt = rand(0, 10);
+                $penjualan -> qt = rand(1, 10);
                 $penjualan -> save();
             }
             echo "No faktur : ".$kdFaktur." \n";

@@ -15,6 +15,11 @@ class M_Penjualan extends Model
         'qt'
     ];
 
+    public function dataProduk($kdProduk)
+    {
+        return M_Produk::where('kd_produk', $kdProduk) -> first();
+    }
+
     public function hitungTransaksi($idTransaksi)
     {
         return $this::where('no_faktur', $idTransaksi) -> count();

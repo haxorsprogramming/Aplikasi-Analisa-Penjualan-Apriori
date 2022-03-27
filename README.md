@@ -9,9 +9,9 @@
 <strong>Fitur</strong>
 <li>Manajemen produk</li>
 <li>Manajemen transaksi</li>
+<li>Create dummy data transaksi (untuk keperluan riset/skripsi, sehingga tidak pelu create data transaksi real)</li>
 <li>Analisa penjualan</li>
 <li>Laporan analisa penjualan</li>
-<li>Progress notifikasi proses analisa apriori realtime</li>
 
 
 <strong>Aplikasi ini sedang dalam pengembangan</strong>

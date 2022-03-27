@@ -66,7 +66,7 @@ function konfirmasiImport()
         $("#modalImportProduk").modal("hide");
         setTimeout(function(){
             pesanUmumApp('success', 'Sukses', pesan);
-            renderPage('app/produk/data');
+            renderPage('app/produk/data', 'Produk');
         }, 400);
     });
 }
@@ -77,7 +77,7 @@ function deleteConfirm(idProduk)
     axios.post(rProsesHapusProduk, ds).then(function(res){
         setTimeout(function(){
             pesanUmumApp('success', 'Sukses', 'Data produk berhasil dihapus');
-            renderPage('app/produk/data');
+            renderPage('app/produk/data', 'Produk');
         }, 10);
     });
 }
@@ -107,7 +107,7 @@ function prosesTambahProduk()
         $("#modalTambahProduk").modal("hide");
         setTimeout(function(){
             pesanUmumApp('success', 'Sukses', 'Data produk berhasil ditambahkan');
-            renderPage('app/produk/data');
+            renderPage('app/produk/data', 'Produk');
         }, 300);
        
     });

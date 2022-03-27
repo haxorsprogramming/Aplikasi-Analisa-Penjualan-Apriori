@@ -20,3 +20,4 @@ Route::post('/app/produk/hapus/proses', [C_Produk::class, 'prosesHapusProduk']);
 Route::post('/app/produk/import/proses', [C_Produk::class, 'prosesImportProduk']);
 
 Route::get('/app/penjualan/data', [C_Penjualan::class, 'dataPenjualanPage']);
+Route::get('/app/penjualan/detail/{kdFaktur}', [C_Penjualan::class, 'detailPenjualan']);

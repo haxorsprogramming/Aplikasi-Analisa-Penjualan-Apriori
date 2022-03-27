@@ -14,4 +14,10 @@ class C_Penjualan extends Controller
         $dr = ['dataPenjualan' => $dataPenjualan];
         return view('main.penjualan.penjualan', $dr);
     }
+    public function detailPenjualan(Request $request, $kdFaktur)
+    {
+        $dataPenjualan = M_Penjualan::where('no_faktur', $kdFaktur) -> get();
+        $dr = ['kdFaktur' => $kdFaktur, 'dataPenjualan' => $dataPenjualan];
+        return view('main.penjualan.detail.detailPenjualan', $dr);
+    }
 }

@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this -> call([S_User::class, S_Kategori::class]);
-        Artisan::call('importDataProduk');
+        // Artisan::call('importDataProduk');
         // Artisan::call('importDataPenjualan');
     }
 
