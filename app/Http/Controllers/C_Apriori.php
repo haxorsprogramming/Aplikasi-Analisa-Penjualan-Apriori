@@ -108,9 +108,9 @@ class C_Apriori extends Controller
         return \Response::json($dr);
     }
 
-    public function hasilAnalisa(Request $request)
+    public function hasilAnalisa(Request $request, $kdPengujian)
     {
-        echo "behasil";
+        return view('main.apriori.hasilAnalisa');
     }
 
 }
