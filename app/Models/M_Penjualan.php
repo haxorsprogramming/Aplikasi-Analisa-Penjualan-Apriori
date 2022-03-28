@@ -7,7 +7,9 @@ use App\Models\M_Produk;
 
 class M_Penjualan extends Model
 {
+    
     protected $table = "tbl_penjualan";
+
     protected $fillable = [
         'kd_penjualan',
         'no_faktur',

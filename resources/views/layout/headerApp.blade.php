@@ -136,7 +136,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">
+                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/apriori/setup', 'Proses Apriori')">
                                     <i class="mdi mdi-storefront mr-2"></i>Proses Apriori
                                 </a>
                             </li>

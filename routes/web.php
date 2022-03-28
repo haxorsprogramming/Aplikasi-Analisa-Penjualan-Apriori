@@ -5,6 +5,8 @@ use App\Http\Controllers\C_Auth;
 use App\Http\Controllers\C_Dashboard;
 use App\Http\Controllers\C_Produk;
 use App\Http\Controllers\C_Penjualan;
+use App\Http\Controllers\C_Apriori;
+
 
 Route::get('/', [C_Auth::class, 'loginPage']);
 Route::post('/auth/login/proses', [C_Auth::class, 'loginProses']);
@@ -21,3 +23,6 @@ Route::post('/app/produk/import/proses', [C_Produk::class, 'prosesImportProduk']
 
 Route::get('/app/penjualan/data', [C_Penjualan::class, 'dataPenjualanPage']);
 Route::get('/app/penjualan/detail/{kdFaktur}', [C_Penjualan::class, 'detailPenjualan']);
+
+Route::get('/app/apriori/setup', [C_Apriori::class, 'setupPerhitunganApriori']);
+Route::post('/app/apriori/analisa/proses', [C_Apriori::class, 'prosesAnalisaApriori']);
