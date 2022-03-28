@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\Models\M_Produk;
 
+
 class M_Penjualan extends Model
 {
     

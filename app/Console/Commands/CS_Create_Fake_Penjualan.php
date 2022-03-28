@@ -47,7 +47,7 @@ class CS_Create_Fake_Penjualan extends Command
         $totalProduk = M_Produk::count();
         for($x = 0; $x < $bahanArgunmen[1]; $x++){
             $kdFaktur = Str::uuid();
-            $jarak = rand(0, 10);
+            $jarak = rand(0, 15);
             $dataProdukTemp = array();
             $dataProduk = M_Produk::all();
             foreach($dataProduk as $produk){

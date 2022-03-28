@@ -20,3 +20,6 @@
 Jika terdapat kendala dalam penggunaan/pengembangan aplikasi ini dapat menghubungi 
 
 <strong>(alditha.forum@gmail.com)</strong>
+
+
+<i>Jika dirasa aplikasinya bermanfaat mungkin kiranya bisa mengapresiasi pengembang aplikasi ini dengan berdonasi di https://saweria.co/haxorsprogramming, berapapun donasi yang diberikan akan sangat membantu kami dalam pengembangan aplikasi" selanjutnya, terima kasih ,,, </i>

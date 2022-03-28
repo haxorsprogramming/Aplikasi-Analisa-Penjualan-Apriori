@@ -56,7 +56,7 @@
 
     function konfirmasiApriori(ds)
     {
-        axios.post(rProsesApriori).then(function(res){
+        axios.post(rProsesApriori, ds).then(function(res){
             console.log(res.data);
         });
     }
