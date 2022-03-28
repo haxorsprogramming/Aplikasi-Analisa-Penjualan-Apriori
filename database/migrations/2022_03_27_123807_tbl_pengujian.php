@@ -17,6 +17,8 @@ class TblPengujian extends Migration
             $table -> id();
             $table -> char('kd_pengujian', 100);
             $table -> char('nama_penguji', 200);
+            $table -> integer('min_supp');
+            $table -> integer('min_confidence');
             $table -> timestamps();
         });
     }

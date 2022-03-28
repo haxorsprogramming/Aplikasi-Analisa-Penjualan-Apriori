@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Console\Commands;
 use Illuminate\Support\Str;
-use Illuminate\Http\Request;
+use Illuminate\Console\Command;
+
 
 use App\Models\M_Pengujian;
 use App\Models\M_Penjualan;
@@ -10,17 +11,42 @@ use App\Models\M_Produk;
 use App\Models\M_Support;
 use App\Models\M_Nilai_Kombinasi;
 
-class C_Apriori extends Controller
+class CS_Apriori_Proses extends Command
 {
-    public function setupPerhitunganApriori()
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'startAprioriProses';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Sintaks untuk memulai proses apriori';
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        return view('main.apriori.setup');
+        parent::__construct();
     }
 
-    public function prosesAnalisaApriori(Request $request)
+    /**
+     * Execute the console command.
+     *
+     * @return int
+     */
+    public function handle()
     {
-        $minSupp = $request -> support;
-        $minConfidence = $request -> confidence;
+        $minSupp = 12;
+        $minConfidence = 20;
+        $nama = "aditia";
         // 'support': support,
         //     'confidence': confidence,
         //     'nama' : nama
@@ -29,7 +55,7 @@ class C_Apriori extends Controller
         $kdPengujian = Str::uuid();
         $pengujian = new M_Pengujian();
         $pengujian -> kd_pengujian = $kdPengujian;
-        $pengujian -> nama_penguji = $request -> nama;
+        $pengujian -> nama_penguji = $nama;
         $pengujian -> min_supp = $minSupp;
         $pengujian -> min_confidence = $minConfidence;
         $totalProduk = M_Produk::count();
@@ -44,6 +70,7 @@ class C_Apriori extends Controller
             $supp -> kd_produk = $kdProduk;
             $supp -> support = $nSupport;
             $supp -> save();
+            echo "Nilai support produk ".$kdProduk." berhasil di save \n";
         }
         // kombinasi 2 item set 
         $qProdukA = M_Support::where('kd_pengujian', $kdPengujian) -> where('support', '>=', $minSupp) -> get();
@@ -68,6 +95,7 @@ class C_Apriori extends Controller
                         $nk -> jumlah_transaksi = 0;
                         $nk -> support = 0;
                         $nk -> save();
+                        echo "Nilai kombinasi ".$kdKombinasi." berhasil di save \n";
                     }
                 }
             }
@@ -97,20 +125,13 @@ class C_Apriori extends Controller
                 'jumlah_transaksi' => $fnTransaksi,
                 'support' => $support
             ]);
+            echo "Nilai kombinasi 2 itemset ".$kdKombinasi." berhasil di save \n";
             // for($x = 1; $x <= $totalFaktur; $x++){
             //     $bonTransaksi1 = M_Penjualan::where('no')
             // }
-
+            
         }
-
         $pengujian -> save();
-        $dr = ['status' => 'sukses', 'kdPengujian' => $kdPengujian];
-        return \Response::json($dr);
+        echo "Proses selesai \n";
     }
-
-    public function hasilAnalisa(Request $request)
-    {
-        echo "behasil";
-    }
-
 }

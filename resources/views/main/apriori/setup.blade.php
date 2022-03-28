@@ -57,7 +57,7 @@
     function konfirmasiApriori(ds)
     {
         axios.post(rProsesApriori, ds).then(function(res){
-            console.log(res.data);
+            pesanUmumApp('success', 'Sukses', 'Proses analisa apriori selesai ..');
         });
     }
 

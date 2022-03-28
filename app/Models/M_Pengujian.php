@@ -11,5 +11,7 @@ class M_Pengujian extends Model
     protected $fillable = [
         'kd_pengujian',
         'nama_penguji',
+        'min_supp',
+        'min_confidence'
     ];
 }
