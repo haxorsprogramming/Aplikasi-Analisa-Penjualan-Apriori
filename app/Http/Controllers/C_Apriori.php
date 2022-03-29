@@ -110,7 +110,22 @@ class C_Apriori extends Controller
 
     public function hasilAnalisa(Request $request, $kdPengujian)
     {
-        return view('main.apriori.hasilAnalisa');
+        $dataPengujian = M_Pengujian::where('kd_pengujian', $kdPengujian) -> first();
+        $dataSupportProduk = M_Support::where('kd_pengujian', $kdPengujian) -> get();
+        $dataMinSupp = M_Support::where('kd_pengujian', $kdPengujian) -> where('support', '>=', $dataPengujian -> min_supp) -> get();
+        $dataKombinasiItemset = M_Nilai_Kombinasi::where('kd_pengujian', $kdPengujian) -> get();
+        $dataMinConfidence = M_Nilai_Kombinasi::where('kd_pengujian', $kdPengujian) -> where('support', '>=', $dataPengujian -> min_confidence) -> get();
+        $totalProduk = M_Produk::count();
+        // dd($dataSupportProduk);
+        $dr = [
+            'dataSupport' => $dataSupportProduk, 
+            'totalProduk' => $totalProduk, 
+            'dataPengujian' => $dataPengujian,
+            'dataMinSupport' => $dataMinSupp,
+            'dataKombinasiItemset' => $dataKombinasiItemset,
+            'dataMinConfidence' => $dataMinConfidence
+        ];
+        return view('main.apriori.hasilAnalisa', $dr);
     }
 
 }

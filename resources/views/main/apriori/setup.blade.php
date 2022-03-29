@@ -60,7 +60,7 @@
             console.log(res.data);
             let kdPengujian = res.data.kdPengujian;
             pesanUmumApp('success', 'Sukses', 'Proses analisa apriori selesai ..');
-            renderPage('app/apriori/analisa/hasil/6e6b2b18-9aad-4631-a86e-a411de778477', 'Hasil Analisa');
+            renderPage('app/apriori/analisa/hasil/'+kdPengujian, 'Hasil Analisa');
         });
     }
 

@@ -65,6 +65,6 @@ class CS_Create_Fake_Penjualan extends Command
             echo "No faktur : ".$kdFaktur." \n";
         }
 
-        echo "Data dummy sukses di buat, total ".$bahanArgunmen[1]." data";
+        echo "Data dummy sukses di buat, total ".$bahanArgunmen[1]." data \n";
     }
 }

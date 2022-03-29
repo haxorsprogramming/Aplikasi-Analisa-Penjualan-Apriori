@@ -13,6 +13,17 @@
 <li>Analisa penjualan</li>
 <li>Laporan analisa penjualan</li>
 
+<strong>Instalasi</strong>
+
+- Pastikan sudah terinstall composer, lakukan instalasi dependency
+
+<code>composer update</code>
+
+- Copy file .env.example ke .env , setting database, kemudian lakukan migrate
+
+<code>php artisan migrate:refresh --seed</code>
+
+
 
 <strong>Aplikasi ini sedang dalam pengembangan</strong>
 
