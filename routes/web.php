@@ -27,3 +27,4 @@ Route::get('/app/penjualan/detail/{kdFaktur}', [C_Penjualan::class, 'detailPenju
 Route::get('/app/apriori/setup', [C_Apriori::class, 'setupPerhitunganApriori']);
 Route::post('/app/apriori/analisa/proses', [C_Apriori::class, 'prosesAnalisaApriori']);
 Route::get('/app/apriori/analisa/hasil/{kdPengujian}', [C_Apriori::class, 'hasilAnalisa']);
+Route::get('/apriori/analisa/cetak/{kdPengujian}', [C_Apriori::class, 'cetakAnalisa']);

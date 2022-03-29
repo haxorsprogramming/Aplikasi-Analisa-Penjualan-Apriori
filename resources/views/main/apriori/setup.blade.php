@@ -2,13 +2,13 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-header">Setup nilai support & confidence</div>
-            <div class="card-body">
+            <div class="card-body" id="divFormSupp">
                 <div class="form-group">
                     <label>Nama Penguji</label>
                     <input type="text" class="form-control" id="txtNama" placeholder="Masukkan nama penguji" value="Aditia Darma">
                 </div>
                 <div class="form-group">
-                    <label for="company">Min. Support</label> <small>Semakin tinggi nilai support akan semakin banyak proses yang mengakibatkan proses apriori menjadi lama</small>
+                    <label for="company">Min. Support</label> <small>Semakin rendah nilai support akan semakin banyak proses yang mengakibatkan proses apriori menjadi lama</small>
                     <select class="form-control" id="txtSupport">
                         <?php
                         $x = 1;
@@ -31,6 +31,12 @@
                     <a class="btn btn-primary" href="javascript:void(0)" onclick="prosesApriori()">Mulai Analisa Penjualan</a>
                 </div>
             </div>
+
+            <div id="divLoadingPengujian" style="text-align: center;margin-bottom:30px;display:none;">
+                <img src="{{ asset('ladun/base/loading.svg') }}"><br/>
+                Memproses apriori, akan memakan waktu sesuai dengan banyaknya data yang diproses
+            </div>
+
         </div>
 
     </div>
@@ -56,6 +62,8 @@
 
     function konfirmasiApriori(ds)
     {
+        $("#divFormSupp").hide();
+        $("#divLoadingPengujian").show();
         axios.post(rProsesApriori, ds).then(function(res){
             console.log(res.data);
             let kdPengujian = res.data.kdPengujian;

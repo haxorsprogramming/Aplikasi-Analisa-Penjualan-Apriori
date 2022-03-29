@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use PDF;
 
 use App\Models\M_Pengujian;
 use App\Models\M_Penjualan;
@@ -123,9 +124,25 @@ class C_Apriori extends Controller
             'dataPengujian' => $dataPengujian,
             'dataMinSupport' => $dataMinSupp,
             'dataKombinasiItemset' => $dataKombinasiItemset,
-            'dataMinConfidence' => $dataMinConfidence
+            'dataMinConfidence' => $dataMinConfidence,
+            'kdPengujian' => $kdPengujian
         ];
         return view('main.apriori.hasilAnalisa', $dr);
+    }
+
+    public function cetakAnalisa(Request $request, $kdPengujian)
+    {
+        $dataPengujian = M_Pengujian::where('kd_pengujian', $kdPengujian) -> first();
+        $dataMinConfidence = M_Nilai_Kombinasi::where('kd_pengujian', $kdPengujian) -> where('support', '>=', $dataPengujian -> min_confidence) -> get();
+        $totalProduk = M_Produk::count();
+        $dr = [
+            'kdPengujian' => $kdPengujian,
+            'dataPengujian' => $dataPengujian,
+            'dataMinConfidence' => $dataMinConfidence,
+            'totalProduk' => $totalProduk
+        ];
+        $pdf = PDF::loadview('main.apriori.cetakAnalisa', $dr);
+        return $pdf -> stream();
     }
 
 }

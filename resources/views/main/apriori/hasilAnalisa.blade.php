@@ -157,6 +157,9 @@
                 </table>
             </div>
 
+            <div>
+                <a href="{{ url('/apriori/analisa/cetak/') }}/{{ $kdPengujian }}" target="new" class="btn btn-primary btn-lg">Cetak Laporan Analisa</a>
+            </div>
 
 
         </div>
