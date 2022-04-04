@@ -33,6 +33,11 @@ class M_Penjualan extends Model
         return $this::where('no_faktur', $idTransaksi) -> sum('qt');
     }
 
+    public function getCreatedAt($idTransaksi)
+    {
+        return $this::where('no_faktur', $idTransaksi) -> pluck('created_at') -> first();
+    }
+
     public function getTotalHarga($idTransaksi)
     {
         $qTransaksi = $this::where('no_faktur', $idTransaksi) -> get();

@@ -68,13 +68,7 @@
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
 
-                    <!-- App Search-->
-                    <form class="app-search d-none d-lg-block">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="mdi mdi-magnify"></span>
-                        </div>
-                    </form>
+                    
                 </div>
 
                 <div class="d-flex">
@@ -128,7 +122,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-flip-horizontal mr-2"></i>Data Master <div class="arrow-down"></div>
+                                    <i class="mdi mdi-database mr-2"></i>Data Master <div class="arrow-down"></div>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-layout">
                                     <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Data Produk</a>
@@ -137,17 +131,17 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/apriori/setup', 'Proses Apriori')">
-                                    <i class="mdi mdi-storefront mr-2"></i>Proses Apriori
+                                    <i class="mdi mdi-equalizer-outline mr-2"></i>Proses Apriori
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/laporan/data', 'Laporan Apriori')">
-                                    <i class="mdi mdi-storefront mr-2"></i>Laporan
+                                    <i class="mdi mdi-file-document-box-search mr-2"></i>Laporan
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/info-aplikasi', 'Informasi Aplikasi')">
-                                    <i class="mdi mdi-storefront mr-2"></i>Info Aplikasi
+                                    <i class="mdi mdi-information mr-2"></i>Info Aplikasi
                                 </a>
                             </li>
                         </ul>

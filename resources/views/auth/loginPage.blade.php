@@ -35,19 +35,6 @@
                                                 <input type="password" class="form-control" id="txtPassword" placeholder="Enter password">
                                             </div>
 
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                                        <label class="custom-control-label" for="customControlInline">Remember me</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="text-md-right mt-3 mt-md-0">
-                                                        <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="mt-4">
                                                 <a class="btn btn-success btn-block waves-effect waves-light" href="javascript:void(0)" @click="loginAtc()">Log In</a>
                                             </div>

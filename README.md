@@ -13,6 +13,33 @@
 <li>Analisa penjualan</li>
 <li>Laporan analisa penjualan</li>
 
+## Tampilan Aplikasi 
+
+- Login
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/LOGIN.png" width="800px"><br/>
+
+- Dashboard
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/DASHBOARD.png" width="800px"><br/>
+
+- Data Produk
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/DATA_PRODUK.png" width="800px"><br/>
+
+- Pengujian
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/PENGUJIAN.png" width="800px"><br/>
+
+- Hasil Analisa 1
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/HASIL_ANALISA.png" width="800px"><br/>
+
+- Hasil Analisa 2
+
+<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/HASIL_ANALISA_2.png" width="800px"><br/>
+
+
 <br/>
 <strong>Instalasi</strong>
 

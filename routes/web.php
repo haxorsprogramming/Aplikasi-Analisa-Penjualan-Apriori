@@ -10,6 +10,7 @@ use App\Http\Controllers\C_Laporan;
 
 Route::get('/', [C_Auth::class, 'loginPage']);
 Route::post('/auth/login/proses', [C_Auth::class, 'loginProses']);
+Route::get('/auth/logout', [C_Auth::class, 'logout']);
 
 Route::get('/dashboard',[C_Dashboard::class, 'dashboard']);
 Route::get('/dashboard/beranda', [C_Dashboard::class, 'berandaPage']);
