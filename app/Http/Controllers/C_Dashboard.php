@@ -15,6 +15,12 @@ class C_Dashboard extends Controller
         $dr = ['status' => 'sukses'];
         return view('main.berandaPage');
     }
+
+    public function infoAplikasi()
+    {
+        return view('main.infoAplikasi');
+    }
+
     function setAwal()
     {
         $dataAwal = array();

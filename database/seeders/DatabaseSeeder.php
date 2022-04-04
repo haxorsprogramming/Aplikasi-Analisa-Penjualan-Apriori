@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this -> call([S_User::class, S_Kategori::class]);
         Artisan::call('importDataProduk');
-        Artisan::call('createFakePenjualan tf=100');
+        Artisan::call('createFakePenjualan tf=200');
         // Artisan::call('importDataPenjualan');
     }
 

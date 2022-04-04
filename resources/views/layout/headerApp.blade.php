@@ -103,7 +103,7 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="rounded-circle header-profile-user" src="{{ asset('ladun/apaxy/') }}/images/users/avatar-1.jpg" alt="Header Avatar">
-                            <span class="d-none d-sm-inline-block ml-1">Shane</span>
+                            <span class="d-none d-sm-inline-block ml-1">Administrator</span>
                             <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -141,12 +141,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">
+                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/laporan/data', 'Laporan Apriori')">
                                     <i class="mdi mdi-storefront mr-2"></i>Laporan
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">
+                                <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/info-aplikasi', 'Informasi Aplikasi')">
                                     <i class="mdi mdi-storefront mr-2"></i>Info Aplikasi
                                 </a>
                             </li>
