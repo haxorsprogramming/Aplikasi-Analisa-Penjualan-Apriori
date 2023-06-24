@@ -33,7 +33,7 @@
 
 - Pengujian 1
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-2.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-1.png" width="800px"><br/>
 
 - Pengujian 2
 
