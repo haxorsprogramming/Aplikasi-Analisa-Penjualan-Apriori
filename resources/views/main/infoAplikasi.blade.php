@@ -3,7 +3,6 @@
         <div class="card-body">
             <h4 class="header-title">Pengembang Aplikasi</h4>
             <div style="text-align: center;">
-                <img class="img-thumbnail" alt="200x200" style="width: 200px;" src="{{ asset('ladun/base/aditia-foto.jpg') }}" data-holder-rendered="true">
                 <p>
                     Nama Pengembang <br/>
                     <strong>Aditia Darma Nst</strong><br/>

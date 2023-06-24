@@ -51,6 +51,10 @@
 
 <code>php artisan migrate:refresh --seed</code>
 
+- Lakukan generate key 
+
+<code>php artisan key:generate</code>
+
 - Untuk mengimport produk harap edit/sesuaikan format file yang ada di <code>public/file_import/DATA_PRODUK.xlsx</code>, kemudian jalankan perintah :
 
 <code>php artisan importDataProduk</code>

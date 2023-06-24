@@ -45,21 +45,21 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
+                        <a href="{{ url('') }}" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="{{ asset('ladun/apaxy/') }}/images/logo-sm-dark.png" alt="" height="22">
+                                <img src="https://nos.jkt-1.neo.id/aditiastorage/asset/logo/logo-side.png" alt="" height="52">
                             </span>
                             <span class="logo-lg">
-                                <img src="{{ asset('ladun/apaxy/') }}/images/logo-dark.png" alt="" height="19">
+                                <img src="https://nos.jkt-1.neo.id/aditiastorage/asset/logo/logo-side.png" alt="" height="39">
                             </span>
                         </a>
 
-                        <a href="index.html" class="logo logo-light">
+                        <a href="{{ url('') }}" class="logo logo-light">
                             <span class="logo-sm">
-                                <img src="{{ asset('ladun/apaxy/') }}/images/logo-sm-light.png" alt="" height="22">
+                                <img src="https://nos.jkt-1.neo.id/aditiastorage/asset/logo/logo-side.png" alt="" height="52">
                             </span>
                             <span class="logo-lg">
-                                <img src="{{ asset('ladun/apaxy/') }}/images/logo-light.png" alt="" height="19">
+                                <img src="https://nos.jkt-1.neo.id/aditiastorage/asset/logo/logo-side.png" alt="" height="39">
                             </span>
                         </a>
                     </div>
@@ -68,7 +68,7 @@
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
 
-                    
+
                 </div>
 
                 <div class="d-flex">
