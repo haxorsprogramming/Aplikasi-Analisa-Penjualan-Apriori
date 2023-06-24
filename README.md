@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/ilustrasi/Information-tab-rafiki.png" width="350">
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/ilustrasi/Information-tab-rafiki.png" width="350" alt="figure-title">
 </p>
 
 ## Aplikasi Analisa Penjualan
@@ -15,30 +15,45 @@
 
 ## Tampilan Aplikasi 
 
-- Login
+- Login Page
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/LOGIN.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/loginpage.png" width="800px"><br/>
 
-- Dashboard
+- Dashboard Page
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/DASHBOARD.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/dashboardpage.png" width="800px"><br/>
 
 - Data Produk
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/DATA_PRODUK.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/data-produk.png" width="800px"><br/>
 
-- Pengujian
+- Tambah Data Produk
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/PENGUJIAN.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/tambah-produk.png"><br/>
+
+- Pengujian 1
+
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-2.png" width="800px"><br/>
+
+- Pengujian 2
+
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-2.png" width="800px"><br/>
+
+- Sukses Pengujian
+
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/sukses-pengujian.png" width="800px"><br/>
 
 - Hasil Analisa 1
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/HASIL_ANALISA.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/hasil-pengujian-1.png" width="800px"><br/>
 
 - Hasil Analisa 2
 
-<img src="https://s3.jagoanstorage.com/aditia-ss-storage-3561/Aplikasi-Analisa-Penjualan-Apriori/HASIL_ANALISA_2.png" width="800px"><br/>
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/hasil-pengujian-2.png" width="800px"><br/>
 
+- Laporan Pengujian 2
+
+<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/laporan-pengujian.png" width="800px"><br/>
 
 <br/>
 <strong>Instalasi</strong>
