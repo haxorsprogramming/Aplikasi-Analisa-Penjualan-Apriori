@@ -20,21 +20,17 @@ class C_Apriori extends Controller
 
     public function prosesAnalisaApriori(Request $request)
     {
-        $minSupp = $request -> support;
-        $minConfidence = $request -> confidence;
-        // 'support': support,
-        //     'confidence': confidence,
-        //     'nama' : nama
-        // $
-        // insert data pengujian 
+        $minSupp = $request->support;
+        $minConfidence = $request->confidence;
+        // insert data pengujian
         $kdPengujian = Str::uuid();
         $pengujian = new M_Pengujian();
-        $pengujian -> kd_pengujian = $kdPengujian;
-        $pengujian -> nama_penguji = $request -> nama;
-        $pengujian -> min_supp = $minSupp;
-        $pengujian -> min_confidence = $minConfidence;
+        $pengujian->kd_pengujian = $kdPengujian;
+        $pengujian->nama_penguji = $request->nama;
+        $pengujian->min_supp = $minSupp;
+        $pengujian->min_confidence = $minConfidence;
         $totalProduk = M_Produk::count();
-        // cari nilai support 
+        // cari nilai support
         $dataProduk = M_Produk::all();
         foreach($dataProduk as $produk){
             $kdProduk = $produk -> kd_produk;
@@ -46,7 +42,7 @@ class C_Apriori extends Controller
             $supp -> support = $nSupport;
             $supp -> save();
         }
-        // kombinasi 2 item set 
+        // kombinasi 2 item set
         $qProdukA = M_Support::where('kd_pengujian', $kdPengujian) -> where('support', '>=', $minSupp) -> get();
         foreach($qProdukA as $qProdA){
             $kdProdukA = $qProdA -> kd_produk;
@@ -82,7 +78,7 @@ class C_Apriori extends Controller
             $kdBarangA = $nk -> kd_barang_a;
             $kdBarangB = $nk -> kd_barang_b;
 
-            // cari total transaksi 
+            // cari total transaksi
             $dataFaktur = M_Penjualan::distinct() -> get(['no_faktur']);
             $fnTransaksi = 0;
             foreach($dataFaktur as $faktur){
@@ -98,10 +94,6 @@ class C_Apriori extends Controller
                 'jumlah_transaksi' => $fnTransaksi,
                 'support' => $support
             ]);
-            // for($x = 1; $x <= $totalFaktur; $x++){
-            //     $bonTransaksi1 = M_Penjualan::where('no')
-            // }
-
         }
 
         $pengujian -> save();
@@ -119,8 +111,8 @@ class C_Apriori extends Controller
         $totalProduk = M_Produk::count();
         // dd($dataSupportProduk);
         $dr = [
-            'dataSupport' => $dataSupportProduk, 
-            'totalProduk' => $totalProduk, 
+            'dataSupport' => $dataSupportProduk,
+            'totalProduk' => $totalProduk,
             'dataPengujian' => $dataPengujian,
             'dataMinSupport' => $dataMinSupp,
             'dataKombinasiItemset' => $dataKombinasiItemset,

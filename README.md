@@ -82,6 +82,10 @@
 
 <code>php artisan createFakePenjualan tf=100</code>
 
+- Jalankan aplikasi
+
+<code>php artisan serve</code>
+
 Jika terdapat kendala dalam penggunaan/pengembangan aplikasi ini dapat menghubungi 
 
 <strong>(alditha.forum@gmail.com)</strong>
