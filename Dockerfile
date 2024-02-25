@@ -29,14 +29,12 @@ RUN apk update && apk --no-cache add autoconf \
     php-curl \
     php-zip \
     icu-dev \
-    linux-headers
+    linux-headers \
+    zip
 
 RUN docker-php-ext-install gd
+RUN docker-php-ext-install zip
 
-RUN apt-get install -y \
-        zlib1g-dev \
-        zip \
-  && docker-php-ext-install zip
 
 RUN apk --no-cache add shadow && \
     usermod -u 1000 www-data && \
