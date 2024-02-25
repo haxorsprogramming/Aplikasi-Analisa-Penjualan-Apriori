@@ -7,7 +7,7 @@ docker container rm apriori_penjualan_container
 echo "Build image docker "
 docker build . -t apriori_penjualan_img
 echo "Running container"
-docker run -itd -p 9000:9000 --name=apriori_penjualan_container --network=almira-net apriori_penjualan_img
+docker run -itd -p 9000:8000 --name=apriori_penjualan_container --network=almira-net apriori_penjualan_img
 docker update --restart unless-stopped apriori_penjualan_container
 echo "============================="
 echo "DEPLOY DONE"
