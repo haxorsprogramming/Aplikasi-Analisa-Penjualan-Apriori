@@ -1,5 +1,5 @@
 # Use the official Nginx image as the base image
-FROM nginx:alpine
+FROM php:8.1.2-fpm-alpine
 
 # Set the working directory in the container
 WORKDIR /var/www/html
@@ -31,17 +31,12 @@ RUN apk update && apk --no-cache add autoconf \
     icu-dev \
     linux-headers
 
-# Install Composer
+RUN apk --no-cache add shadow && \
+    usermod -u 1000 www-data && \
+    groupmod -g 1000 www-data
+
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install Laravel dependencies
-RUN composer install --no-dev
-
-# Set permissions
-RUN chmod -R 775 storage bootstrap/cache
-
-# Expose port 80
-EXPOSE 80
-
-# Start PHP-FPM and Nginx
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 9000
+CMD ["php-fpm"]
