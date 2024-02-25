@@ -11,31 +11,25 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY . .
 
 # Install PHP and necessary extensions
-RUN apk --update --no-cache add \
-    php8 \
-    php8-fpm \
-    php8-opcache \
-    php8-openssl \
-    php8-pdo \
-    php8-pdo_mysql \
-    php8-mbstring \
-    php8-tokenizer \
-    php8-json \
-    php8-xml \
-    php8-ctype \
-    php8-xmlwriter \
-    php8-fileinfo \
-    php8-gd \
-    php8-pecl-imagick \
-    php8-session \
-    php8-zip \
-    php8-curl \
-    php8-dom \
-    php8-xmlreader \
-    php8-redis \
-    php8-exif \
-    php8-intl \
-    php8-simplexml
+RUN apk update && apk --no-cache add autoconf \
+    $PHPIZE_DEPS \
+    postgresql-dev \
+    mysql-dev \
+    libzip-dev \
+    freetype \
+    libpng \
+    libjpeg-turbo \
+    freetype-dev \
+    libpng-dev \
+    jpeg-dev \
+    libjpeg \
+    libjpeg-turbo-dev \
+    php-xml \
+    php-json \
+    php-curl \
+    php-zip \
+    icu-dev \
+    linux-headers
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
