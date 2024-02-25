@@ -1,47 +1,15 @@
-# Use the official Nginx image as the base image
-FROM php:8.1.2-fpm-alpine
+# Dockerfile
+FROM php:7.2-cli
 
-# Set the working directory in the container
-WORKDIR /var/www/html
-
-# Copy the Nginx server block configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Copy the Laravel application files to the container
-COPY . .
-
-# Install PHP and necessary extensions
-RUN apk update && apk --no-cache add autoconf \
-    $PHPIZE_DEPS \
-    postgresql-dev \
-    mysql-dev \
-    libzip-dev \
-    freetype \
-    libpng \
-    libjpeg-turbo \
-    freetype-dev \
-    libpng-dev \
-    jpeg-dev \
-    libjpeg \
-    libjpeg-turbo-dev \
-    php-xml \
-    php-json \
-    php-curl \
-    php-zip \
-    icu-dev \
-    linux-headers \
-    zip
-
-RUN docker-php-ext-install gd
-RUN docker-php-ext-install zip
-
-
-RUN apk --no-cache add shadow && \
-    usermod -u 1000 www-data && \
-    groupmod -g 1000 www-data
-
+RUN apt-get update -y && apt-get install -y libmcrypt-dev
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN docker-php-ext-install pdo mbstring
+
+WORKDIR /app
+COPY . /app
+
+RUN composer install
 
 EXPOSE 9000
-CMD ["php-fpm"]
+CMD php artisan serve --host=0.0.0.0 --port=9000
