@@ -31,6 +31,8 @@ RUN apk update && apk --no-cache add autoconf \
     icu-dev \
     linux-headers
 
+RUN docker-php-ext-install gd
+
 RUN apk --no-cache add shadow && \
     usermod -u 1000 www-data && \
     groupmod -g 1000 www-data
