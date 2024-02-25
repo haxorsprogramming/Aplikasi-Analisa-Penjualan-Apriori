@@ -86,6 +86,8 @@
 
 <code>php artisan serve</code>
 
+- Username -> admin, password -> admin
+
 Jika terdapat kendala dalam penggunaan/pengembangan aplikasi ini dapat menghubungi 
 
 <strong>(alditha.forum@gmail.com)</strong>
