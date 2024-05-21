@@ -21,39 +21,39 @@
 
 - Dashboard Page
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/dashboardpage.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/dashboardpage.png" width="800px"><br/>
 
 - Data Produk
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/data-produk.png" width="800px"><br/>
+<img src="hhttps://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/data-produk.png" width="800px"><br/>
 
 - Tambah Data Produk
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/tambah-produk.png"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/tambah-produk.png"><br/>
 
 - Pengujian 1
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-1.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/pengujian-1.png" width="800px"><br/>
 
 - Pengujian 2
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/pengujian-2.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/pengujian-2.png" width="800px"><br/>
 
 - Sukses Pengujian
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/sukses-pengujian.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/sukses-pengujian.png" width="800px"><br/>
 
 - Hasil Analisa 1
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/hasil-pengujian-1.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/hasil-pengujian-1.png" width="800px"><br/>
 
 - Hasil Analisa 2
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/hasil-pengujian-2.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/hasil-pengujian-2.png" width="800px"><br/>
 
 - Laporan Pengujian 2
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/laporan-pengujian.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/laporan-pengujian.png" width="800px"><br/>
 
 <br/>
 <strong>Instalasi</strong>
