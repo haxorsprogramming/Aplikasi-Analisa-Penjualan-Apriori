@@ -17,7 +17,7 @@
 
 - Login Page
 
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/screenshoot/aplikasi-analisa-penjualan-apriori/loginpage.png" width="800px"><br/>
+<img src="https://s3-id-jkt-1.kilatstorage.id/hanara/screenshoot/analisa-penjualan-apriori/loginpage.png" width="800px"><br/>
 
 - Dashboard Page
 
