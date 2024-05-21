@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://nos.jkt-1.neo.id/aditiastorage/asset/ilustrasi/Information-tab-rafiki.png" width="350" alt="figure-title">
+<img src="hhttps://s3-id-jkt-1.kilatstorage.id/hanara/asset/almira/logo/side-logo.png" width="350" alt="figure-title">
 </p>
 
 ## Aplikasi Analisa Penjualan
