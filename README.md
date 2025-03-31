@@ -4,6 +4,8 @@
 
 ## Aplikasi Analisa Penjualan Menggunakan Metode Apriori
 
+<b>Aplikasi ini sudah tidak di maintenance, untuk versi terbaru aplikasi ini dapat dilihat di youtube <a href="https://www.youtube.com/@AlmiraTechId">Almira Tech</a></b>
+
 <br/>
 <strong>Fitur</strong>
 <li>Manajemen produk</li>
