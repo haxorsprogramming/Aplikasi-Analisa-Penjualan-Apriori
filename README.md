@@ -86,11 +86,14 @@
 
 <code>php artisan serve</code>
 
-- Username -> admin, password -> admin
+- Username : admin, password : admin
 
 Jika terdapat kendala dalam penggunaan/pengembangan aplikasi ini dapat menghubungi 
 
 <strong>(alditha.forum@gmail.com)</strong>
 
+<i>Note : Aplikasi ini sudah tidak dimaintenance, jadi jika bertanya seputar hal teknis kemungkinan tidak akan dijawab, silahkan lihat update terbaru dari versi aplikasi ini di youtube "Almira Tech"</i>
 
-<i>Jika dirasa aplikasinya bermanfaat mungkin kiranya bisa mengapresiasi pengembang aplikasi ini dengan berdonasi di https://saweria.co/haxorsprogramming, berapapun donasi yang diberikan akan sangat membantu kami dalam pengembangan aplikasi" selanjutnya, terima kasih ,,, </i>
+Jika dirasa aplikasinya bermanfaat mungkin kiranya bisa mengapresiasi pengembang aplikasi ini dengan berdonasi di https://saweria.co/haxorsprogramming, berapapun donasi yang diberikan akan sangat membantu kami dalam pengembangan aplikasi" selanjutnya, terima kasih ,,, 
+
+
