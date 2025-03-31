@@ -2,8 +2,7 @@
 <img src="https://s3-id-jkt-1.kilatstorage.id/hanara/asset/almira/logo/side-logo.png" width="350" alt="logo-almira-tech">
 </p>
 
-## Aplikasi Analisa Penjualan
-(Menggunakan metode apriori)
+## Aplikasi Analisa Penjualan Menggunakan Metode Apriori
 
 <br/>
 <strong>Fitur</strong>
